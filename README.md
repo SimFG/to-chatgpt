@@ -95,7 +95,7 @@ The way to get the cookie:
 
 - F12 for console
 - Copy the values
-  - Session: Go to Application → Cookies → __Secure-1PSID. Copy the value of that cookie.
+  - Session: Go to Application → Cookies → \_\_Secure-1PSID. Copy the value of that cookie.
 
 more details: [Bard](https://github.com/acheong08/Bard/)
 
@@ -104,6 +104,7 @@ more details: [Bard](https://github.com/acheong08/Bard/)
 ### Support more llm services
 
 - [text-generation-inference](https://github.com/huggingface/text-generation-inference)
+- [OpenLLM](https://github.com/bentoml/OpenLLM)
 - open-assistant
 
 If there are other llm services, **welcome to open a pr and write it here**!!!
@@ -117,13 +118,14 @@ Through this service, in addition to conversion, LLM requests and related data c
 - Customize the service key to limit service requests
 - LLM service key management
 - Request limit
-- Whitelist and Blacklist IP 
+- Whitelist and Blacklist IP
 - Record the request history
 - Manager the request info page, like show/download/delete/various charts...
 
 ## Awesome chatgpt applications
 
 ### plugins
+
 - [openai-translator](https://github.com/openai-translator/openai-translator)
 - [chathub](https://github.com/chathub-dev/chathub)
 
@@ -133,3 +135,8 @@ Through this service, in addition to conversion, LLM requests and related data c
 
 If there are other awesome chatgpt applications, **welcome to open a pr and write it here**!!!
 
+### Awesome open and OpenAI-Compatible llms
+
+- [FastChat](https://github.com/lm-sys/FastChat)
+
+If there are other open and OpenAI-Compatible llms, **wkkkkkelcome to open a pr and write it here**!!!
