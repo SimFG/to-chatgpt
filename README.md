@@ -6,6 +6,14 @@ There are many LLM online services now, but most of the desktop clients, browser
 
 For this, and inspired by the [claude to chatgpt](https://github.com/jtsang4/claude-to-chatgpt) project, I decided to give it a try, go go go !!!
 
+**CATALOG**
+
+- [Usage](#usage)
+- [How to use it](#how-to-use-it)
+- [Roadmap](#roadmap)
+- [Awesome chatgpt applications](#awesome-chatgpt-applications)
+- [Awesome open and OpenAI-Compatible llms](#awesome-open-and-openai-compatible-llms)
+
 ## Usage
 
 Before using, you need to ensure that the current environment can access the corresponding llm services.
@@ -135,7 +143,12 @@ Through this service, in addition to conversion, LLM requests and related data c
 
 If there are other awesome chatgpt applications, **welcome to open a pr and write it here**!!!
 
-### Awesome open and OpenAI-Compatible llms
+## Awesome open and OpenAI-Compatible llms
+
+- [FastChat](https://github.com/lm-sys/FastChat)
+- [vllm](https://github.com/vllm-project/vllm)
+
+If there are other open and OpenAI-Compatible llms, **welcome to open a pr and write it here**!!!
 
 These open-source LLM models provide OpenAI-compatible APIs for its supported models, so you can use them as a local drop-in replacement for OpenAI APIs. These servers is compatible with both openai-python library and cURL commands.
 
@@ -155,9 +168,4 @@ curl http://localhost:8000/v1/chat/completions \
     "messages": [{"role": "user", "content": "Hello! What is your name?"}]
   }'
 ```
-more detais: [FastChat And OpenAI API](https://github.com/lm-sys/FastChat/blob/main/docs/openai_api.md)
-
-- [FastChat](https://github.com/lm-sys/FastChat)
-- [vllm](https://github.com/vllm-project/vllm)
-
-If there are other open and OpenAI-Compatible llms, **welcome to open a pr and write it here**!!!
+more fastchat detais: [FastChat And OpenAI API](https://github.com/lm-sys/FastChat/blob/main/docs/openai_api.md)
