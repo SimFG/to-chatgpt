@@ -137,6 +137,27 @@ If there are other awesome chatgpt applications, **welcome to open a pr and writ
 
 ### Awesome open and OpenAI-Compatible llms
 
-- [FastChat](https://github.com/lm-sys/FastChat)
+These open-source LLM models provide OpenAI-compatible APIs for its supported models, so you can use them as a local drop-in replacement for OpenAI APIs. These servers is compatible with both openai-python library and cURL commands.
 
-If there are other open and OpenAI-Compatible llms, **wkkkkkelcome to open a pr and write it here**!!!
+Take fastchat as an example:
+
+```bash
+# start the server
+python3 -m fastchat.serve.controller
+python3 -m fastchat.serve.model_worker --model-path lmsys/vicuna-7b-v1.3
+python3 -m fastchat.serve.openai_api_server --host localhost --port 8000
+
+# use the openai api
+curl http://localhost:8000/v1/chat/completions \
+  -H "Content-Type: application/json" \
+  -d '{
+    "model": "vicuna-7b-v1.3",
+    "messages": [{"role": "user", "content": "Hello! What is your name?"}]
+  }'
+```
+more detais: [FastChat And OpenAI API](https://github.com/lm-sys/FastChat/blob/main/docs/openai_api.md)
+
+- [FastChat](https://github.com/lm-sys/FastChat)
+- [vllm](https://github.com/vllm-project/vllm)
+
+If there are other open and OpenAI-Compatible llms, **welcome to open a pr and write it here**!!!
